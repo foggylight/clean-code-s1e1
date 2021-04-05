@@ -14,6 +14,16 @@
   text-align: right;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
 .header .header-img {
   width: 100%;
 }
@@ -77,8 +87,7 @@
 
 /* heading */
 
-.heading,
-.add-task-heading {
+.heading {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -107,7 +116,11 @@
 
 /* new task */
 
-.add-task-heading {
+#add-task {
+  margin: 16px 0;
+}
+
+#add-task .heading {
   display: block;
   margin: 0 0 20px;
 }
