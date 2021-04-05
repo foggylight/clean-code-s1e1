@@ -21,7 +21,7 @@ body {
 .header { text-align: center;
 }
 }
-.main-page-wrapper {
+.main-wrapper {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -31,7 +31,7 @@ body {
   display: inline-block;
   flex-grow: 1
 }
-.task-row-wrapper {
+.new-task-wrapper {
   display: flex;
 }
 ul {
@@ -118,17 +118,17 @@ li > label {
 li >    input[type="text"] {
   width: 226px
 }
-button.delete img {
+button.delete-btn img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+button.delete-btn img:hover {
   transform: rotateZ(0);
 }
 
 /* completed */
-ul#completed-tasks label {
+ul#tasks-done label {
   text-decoration: line-through
   color: #888;
 }
